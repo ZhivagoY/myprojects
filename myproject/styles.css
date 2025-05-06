@@ -1,0 +1,52 @@
+body {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+nav {
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    position: fixed;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+nav > #navbar {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 10px;
+    flex-direction: row;
+    margin: auto 20px auto 0;
+}
+
+#navbar > div > h3, #navbar > div > img{
+    font-size: 1.2em;
+    padding: 2px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+#navbar > div > img {
+    border: none;
+    margin-top: 12px;
+    width: 40px;
+}
+
+#logo-name > h1 {
+    font-size: 40px;
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+
+nav > #logo-name {
+    display: flex;
+    text-align: center;
+    gap: 10px;
+}
+
+#logo {
+    height: 80px;
+    width: 80px;
+}
