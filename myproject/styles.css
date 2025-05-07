@@ -1,16 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 body {
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f7f7f7;
 }
 
 nav {
-    width: 100vw;
+    width: 100%;
     margin: 0;
     padding: 0;
     display: flex;
-    position: fixed;
+    position: sticky;
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-between;
+    background-color: #fff;
 }
 
 nav > #navbar {
@@ -21,17 +28,19 @@ nav > #navbar {
     margin: auto 20px auto 0;
 }
 
-#navbar > div > h3, #navbar > div > img{
+#navbar > div > h3 {
     font-size: 1.2em;
     padding: 2px;
     border: 1px solid black;
     border-radius: 5px;
+    margin-top: 5px;
 }
 
 #navbar > div > img {
     border: none;
-    margin-top: 12px;
     width: 40px;
+    margin-left: 8px;
+    margin-right: 20px;
 }
 
 #logo-name > h1 {
@@ -49,4 +58,58 @@ nav > #logo-name {
 #logo {
     height: 80px;
     width: 80px;
+}
+
+#special {
+    margin: 20px;
+    background-color: #fff;
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+
+#special > h2 {
+    padding-bottom: 10px;
+}
+
+#items {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+#items img, #items h3 {
+    width: 200px;
+}
+
+.product-card-price-info {
+    display: flex;
+    gap: 10px;
+}
+
+.product-card {
+    flex-grow: 1;
+    flex-basis: 200px;
+}
+
+.product-card-title {
+    text-decoration: none;
+    color: #333;
+}
+
+.product-card-rating-div {
+    display: inline-flex;
+    align-items: center;
+    background-color: #f7f7f7;
+    padding: 4px 5px;
+    border-radius: 10px;
+    color: #333;
+    width: 100%;
+}
+
+.product-card-rating-div svg {
+    margin-right: 3px;
+}
+
+.product-card-opinion {
+    margin-left: 5px;
 }
