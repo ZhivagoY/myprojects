@@ -16,8 +16,43 @@
             
             <div id="navbar">
                 <div class="nav-buttons">
-                    <a href="_blank">КАТАЛОГ</a>
-                    <a href="_blank">КОНТАКТЫ</a>
+                    <button class="nav-btn" id="catalogBtn">КАТАЛОГ</button>
+                    <div id="catalogModal" class="modal">
+                        <div class="modal-content">
+                            <span class="close">&times;</span>
+                            <h2>Каталог компьютерной техники</h2>
+                            <div class="catalog-container">
+                                <div class="catalog-category">
+                                    <div class="category-title">Комплектующие</div>
+                                    <div class="subcategory"><a href="details/processors.html">Процессоры</a></div>
+                                    <div class="subcategory"><a href="details/motherboards.html">Материнские платы</a></div>
+                                    <div class="subcategory"><a href="details/videocards.html">Видеокарты</a></div>
+                                    <div class="subcategory"><a href="details/ram.html">Оперативная память</a></div>
+                                    <div class="subcategory"><a href="details/storage.html">Жесткие диски и SSD</a></div>
+                                    <div class="subcategory"><a href="details/psu.html">Блоки питания</a></div>
+                                    <div class="subcategory"><a href="details/cases.html">Корпуса</a></div>
+                                    <div class="subcategory"><a href="details/cooling.html">Охлаждение</a></div>
+                                </div>
+                                
+                                <div class="catalog-category">
+                                    <div class="category-title">Периферия</div>
+                                    <div class="subcategory"><a href="periphery/monitors.html">Мониторы</a></div>
+                                    <div class="subcategory"><a href="periphery/keyboards.html">Клавиатуры</a></div>
+                                    <div class="subcategory"><a href="periphery/mice.html">Мыши</a></div>
+                                    <div class="subcategory"><a href="periphery/headphones.html">Наушники</a></div>
+                                </div>
+                                
+                                <div class="catalog-category">
+                                    <div class="category-title">Программное обеспечение</div>
+                                    <div class="subcategory"><a href="po/os.html">Операционные системы</a></div>
+                                    <div class="subcategory"><a href="po/antivirus.html">Антивирусы</a></div>
+                                    <div class="subcategory"><a href="po/office.html">Офисные программы</a></div>
+                                    <div class="subcategory"><a href="po/graphics.html">Графические редакторы</a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="nav-btn" id="contactsBtn">КОНТАКТЫ</button>
                 </div>
                 <div class="shopping-cart">
                     <img src="images/shopping-cart.png" alt="Корзина">
@@ -25,6 +60,7 @@
             </div>
         </div>
     </nav>
+     
     <div id="homepage">
         <div id="special">
             <h2>Сезонные скидки</h2>
@@ -89,11 +125,72 @@
                         <div class="product-card-opinion">155 отзывов</div>
                     </div>
                 </div>
+                <div class="product-card">
+                <a href="_blank" class="product-card-image">
+                    <img src="images/asus_rog_strix.jpg">
+                </a>
+                <div class="product-card-price-info">
+                    <div class="product-card-price"><strong>34 999 ₽</strong></div>
+                    <div class="product-card-prev-price"><s>37 499</s></div>
+                </div>
+                <a href="_blank" class="product-card-title">Видеокарта ASUS ROG Strix GeForce RTX 3060</a>
+                <div class="product-card-rating-div">
+                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M5.4496 0.672448L4.07058 3.43241C3.98127 3.61117 3.80862 3.73507 3.60892 3.76373L0.525404 4.20625C0.0230754 4.27857 -0.178248 4.88907 0.185844 5.23983L2.41753 7.38862C2.56203 7.52775 2.62798 7.72821 2.59389 7.92467L2.06741 10.9587C1.98127 11.4527 2.50696 11.8308 2.95641 11.5971L5.71495 10.1644C5.8936 10.0716 6.10705 10.0716 6.28569 10.1644L9.04317 11.597C9.49194 11.8304 10.0183 11.4538 9.93235 10.9587L9.40587 7.92467C9.37178 7.72821 9.43773 7.52775 9.58223 7.38862L11.814 5.23971C12.178 4.88949 11.9776 4.2787 11.4745 4.20627L8.39084 3.76373C8.19113 3.73507 8.01849 3.61117 7.92918 3.43241L6.55003 0.672183C6.32551 0.222563 5.67536 0.221666 5.4496 0.672448Z" fill="#FFA319"></path></svg>
+                    <div class="product-card-rating"><strong>4.8</strong> |</div>
+                    <div class="product-card-opinion">124 отзыва</div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <a href="_blank" class="product-card-image">
+                    <img src="images/ryzen7.jpg">
+                </a>
+                <div class="product-card-price-info">
+                    <div class="product-card-price"><strong>21 499 ₽</strong></div>
+                    <div class="product-card-prev-price"><s>23 999</s></div>
+                </div>
+                <a href="_blank" class="product-card-title">Процессор AMD Ryzen 7 5800X</a>
+                <div class="product-card-rating-div">
+                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M5.4496 0.672448L4.07058 3.43241C3.98127 3.61117 3.80862 3.73507 3.60892 3.76373L0.525404 4.20625C0.0230754 4.27857 -0.178248 4.88907 0.185844 5.23983L2.41753 7.38862C2.56203 7.52775 2.62798 7.72821 2.59389 7.92467L2.06741 10.9587C1.98127 11.4527 2.50696 11.8308 2.95641 11.5971L5.71495 10.1644C5.8936 10.0716 6.10705 10.0716 6.28569 10.1644L9.04317 11.597C9.49194 11.8304 10.0183 11.4538 9.93235 10.9587L9.40587 7.92467C9.37178 7.72821 9.43773 7.52775 9.58223 7.38862L11.814 5.23971C12.178 4.88949 11.9776 4.2787 11.4745 4.20627L8.39084 3.76373C8.19113 3.73507 8.01849 3.61117 7.92918 3.43241L6.55003 0.672183C6.32551 0.222563 5.67536 0.221666 5.4496 0.672448Z" fill="#FFA319"></path></svg>
+                    <div class="product-card-rating"><strong>4.9</strong> |</div>
+                    <div class="product-card-opinion">215 отзывов</div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <a href="_blank" class="product-card-image">
+                    <img src="images/samsung_ssd.jpg">
+                </a>
+                <div class="product-card-price-info">
+                    <div class="product-card-price"><strong>6 299 ₽</strong></div>
+                    <div class="product-card-prev-price"><s>7 199</s></div>
+                </div>
+                <a href="_blank" class="product-card-title">SSD накопитель Samsung 870 EVO 500GB</a>
+                <div class="product-card-rating-div">
+                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M5.4496 0.672448L4.07058 3.43241C3.98127 3.61117 3.80862 3.73507 3.60892 3.76373L0.525404 4.20625C0.0230754 4.27857 -0.178248 4.88907 0.185844 5.23983L2.41753 7.38862C2.56203 7.52775 2.62798 7.72821 2.59389 7.92467L2.06741 10.9587C1.98127 11.4527 2.50696 11.8308 2.95641 11.5971L5.71495 10.1644C5.8936 10.0716 6.10705 10.0716 6.28569 10.1644L9.04317 11.597C9.49194 11.8304 10.0183 11.4538 9.93235 10.9587L9.40587 7.92467C9.37178 7.72821 9.43773 7.52775 9.58223 7.38862L11.814 5.23971C12.178 4.88949 11.9776 4.2787 11.4745 4.20627L8.39084 3.76373C8.19113 3.73507 8.01849 3.61117 7.92918 3.43241L6.55003 0.672183C6.32551 0.222563 5.67536 0.221666 5.4496 0.672448Z" fill="#FFA319"></path></svg>
+                    <div class="product-card-rating"><strong>4.7</strong> |</div>
+                    <div class="product-card-opinion">92 отзыва</div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <a href="_blank" class="product-card-image">
+                    <img src="images/logitech_g502.jpg">
+                </a>
+                <div class="product-card-price-info">
+                    <div class="product-card-price"><strong>5 499 ₽</strong></div>
+                    <div class="product-card-prev-price"><s>6 199</s></div>
+                </div>
+                <a href="_blank" class="product-card-title">Игровая мышь Logitech G502 HERO</a>
+                <div class="product-card-rating-div">
+                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M5.4496 0.672448L4.07058 3.43241C3.98127 3.61117 3.80862 3.73507 3.60892 3.76373L0.525404 4.20625C0.0230754 4.27857 -0.178248 4.88907 0.185844 5.23983L2.41753 7.38862C2.56203 7.52775 2.62798 7.72821 2.59389 7.92467L2.06741 10.9587C1.98127 11.4527 2.50696 11.8308 2.95641 11.5971L5.71495 10.1644C5.8936 10.0716 6.10705 10.0716 6.28569 10.1644L9.04317 11.597C9.49194 11.8304 10.0183 11.4538 9.93235 10.9587L9.40587 7.92467C9.37178 7.72821 9.43773 7.52775 9.58223 7.38862L11.814 5.23971C12.178 4.88949 11.9776 4.2787 11.4745 4.20627L8.39084 3.76373C8.19113 3.73507 8.01849 3.61117 7.92918 3.43241L6.55003 0.672183C6.32551 0.222563 5.67536 0.221666 5.4496 0.672448Z" fill="#FFA319"></path></svg>
+                    <div class="product-card-rating"><strong>4.6</strong> |</div>
+                    <div class="product-card-opinion">178 отзывов</div>
+                </div>
+            </div>
             </div>
         </div>
-        <div id="everything">
-
-        </div>
     </main>
+    <script src="script.js"></script>
 </body>
 </html>
