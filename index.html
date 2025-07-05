@@ -1,172 +1,119 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PC Store</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Amazing PC - Магазин компьютерных комплектующих</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/modal.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Orbitron:wght@500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="icon" href="images/logo.png" type="image/png">
 </head>
 <body>
+    <!-- Навигация -->
     <nav>
         <div id="header">
             <div id="logo-name">
-                <img id="logo" src="images/logo.png" alt="Логотип">
+                <img id="logo" src="images/logo.png" alt="Логотип Amazing PC">
                 <h1>Amazing PC</h1>
             </div>
             
             <div id="navbar">
+                <div class="nav-links">
+                    <a href="#" class="nav-link">Главная</a>
+                    <a href="#catalog" class="nav-link">Каталог</a>
+                    <a href="#window" class="nav-link">Акции</a>
+                    <a href="#footer" class="nav-link">О нас</a>
+                </div>
+                
                 <div class="nav-buttons">
                     <a class="shopping-cart">
                         <img src="images/shopping-cart.png" alt="Корзина">
+                        <span class="cart-counter">0</span>
                     </a>
                 </div>
             </div>
         </div>
     </nav>
+
+    <!-- Hero-блок -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Соберите свой идеальный ПК</h1>
+            <p>Топовые компоненты с гарантией качества и бесплатной доставкой</p>
+            <a href="#catalog" class="hero-btn">В каталог</a>
+        </div>
+        <div class="hero-image">
+            <img src="images/hero-pc.jpg" alt="Игровой компьютер">
+        </div>
+    </section>
      
+    <!-- Основной контент -->
     <div id="homepage">
         <div id="window">
             <h2>Сезонные скидки</h2>
             <div id="items">
-                <div class="product-card">
-                    <div class="product-card-image">
-                        <img src="images/amd1.jpg">
-                    </div>
-                    <div class="product-card-price-info">
-                        <div class="product-card-price"><strong>13 000 ₽</strong></div>
-                        <div class="product-card-prev-price"><s>14 300</s></div>
-                    </div>
-                    <div class="product-card-title">Процессор AMD Ryzen 5 7500f OEM</div>
-                    <button class="add-to-cart-btn">Добавить в корзину</button>
-                </div>
-                <div class="product-card">
-                    <div class="product-card-image">
-                        <img src="images/4060.jpg">
-                    </div>
-                    <div class="product-card-price-info">
-                        <div class="product-card-price"><strong>28 999 ₽</strong></div>
-                        <div class="product-card-prev-price"><s>32 999</s></div>
-                    </div>
-                    <div class="product-card-title">Видеокарта Palit GeForce RTX 4060 Dual</div>
-                    <button class="add-to-cart-btn">Добавить в корзину</button>
-                </div>
-                <div class="product-card">
-                    <div class="product-card-image">
-                        <img src="images/adata32.jpg">
-                    </div>
-                    <div class="product-card-price-info">
-                        <div class="product-card-price"><strong>8 999 ₽</strong></div>
-                        <div class="product-card-prev-price"><s>9 999</s></div>
-                    </div>
-                    <div class="product-card-title">Оперативная память ADATA XPG Lancer Blade</div>
-                    <button class="add-to-cart-btn">Добавить в корзину</button>
-                </div>
-                <div class="product-card">
-                    <div class="product-card-image">
-                        <img src="images/msib650.jpg">
-                    </div>
-                    <div class="product-card-price-info">
-                        <div class="product-card-price"><strong>15 299 ₽</strong></div>
-                        <div class="product-card-prev-price"><s>16 999</s></div>
-                    </div>
-                    <div class="product-card-title">Материнская плата MSI B650 GAMING PLUS WIFI</div>
-                    <button class="add-to-cart-btn">Добавить в корзину</button>
-                </div>
-                <div class="product-card">
-                    <div class="product-card-image">
-                        <img src="images/asus_rog_strix.jpg">
-                    </div>
-                    <div class="product-card-price-info">
-                        <div class="product-card-price"><strong>34 999 ₽</strong></div>
-                        <div class="product-card-prev-price"><s>37 499</s></div>
-                    </div>
-                    <div class="product-card-title">Видеокарта ASUS ROG Strix GeForce RTX 3060</div>
-                    <button class="add-to-cart-btn">Добавить в корзину</button>
-                </div>
-
-                <div class="product-card">
-                    <div class="product-card-image">
-                        <img src="images/ryzen7.jpg">
-                    </div>
-                    <div class="product-card-price-info">
-                        <div class="product-card-price"><strong>21 499 ₽</strong></div>
-                        <div class="product-card-prev-price"><s>23 999</s></div>
-                    </div>
-                    <div class="product-card-title">Процессор AMD Ryzen 7 5800X</div>
-                    <button class="add-to-cart-btn">Добавить в корзину</button>
-                </div>
-
-                <div class="product-card">
-                    <div class="product-card-image">
-                        <img src="images/samsung_ssd.jpg">
-                    </div>
-                    <div class="product-card-price-info">
-                        <div class="product-card-price"><strong>6 299 ₽</strong></div>
-                        <div class="product-card-prev-price"><s>7 199</s></div>
-                    </div>
-                    <div class="product-card-title">SSD накопитель Samsung 870 EVO 500GB</div>
-                    <button class="add-to-cart-btn">Добавить в корзину</button>
-                </div>
-
-                <div class="product-card">
-                    <div class="product-card-image">
-                        <img src="images/logitech_g502.jpg">
-                    </div>
-                    <div class="product-card-price-info">
-                        <div class="product-card-price"><strong>5 499 ₽</strong></div>
-                        <div class="product-card-prev-price"><s>6 199</s></div>
-                    </div>
-                    <div class="product-card-title">Игровая мышь Logitech G502 HERO</div>
-                    <button class="add-to-cart-btn">Добавить в корзину</button>
-                </div>
+                <!-- Товары будут загружаться динамически -->
             </div>
         </div>
+        
+        <!-- Каталог категорий -->
         <div id="window">
-            <div class="catalog">
+            <div class="catalog" id="catalog">
                 <div class="category">
                     <div class="category-header">Комплектующие</div>
                     <ul class="subcategories">
-                        <li class="subcategory">Процессоры</li>
-                        <li class="subcategory">Видеокарты</li>
-                        <li class="subcategory">Материнские платы</li>
-                        <li class="subcategory">Оперативная память</li>
-                        <li class="subcategory">Блоки питания</li>
-                        <li class="subcategory">Корпуса</li>
-                        <li class="subcategory">Охлаждение</li>
+                        <li class="subcategory" data-category="processors">Процессоры</li>
+                        <li class="subcategory" data-category="videocards">Видеокарты</li>
+                        <li class="subcategory" data-category="motherboards">Материнские платы</li>
+                        <li class="subcategory" data-category="ram">Оперативная память</li>
+                        <li class="subcategory" data-category="power">Блоки питания</li>
+                        <li class="subcategory" data-category="cases">Корпуса</li>
+                        <li class="subcategory" data-category="cooling">Охлаждение</li>
                     </ul>
                 </div>
                 
                 <div class="category">
                     <div class="category-header">Периферия</div>
                     <ul class="subcategories">
-                        <li class="subcategory">Мониторы</li>
-                        <li class="subcategory">Клавиатуры</li>
-                        <li class="subcategory">Мыши</li>
-                        <li class="subcategory">Наушники</li>
+                        <li class="subcategory" data-category="monitors">Мониторы</li>
+                        <li class="subcategory" data-category="keyboards">Клавиатуры</li>
+                        <li class="subcategory" data-category="mice">Мыши</li>
+                        <li class="subcategory" data-category="headphones">Наушники</li>
                     </ul>
                 </div>
                 
                 <div class="category">
                     <div class="category-header">Программное обеспечение</div>
                     <ul class="subcategories">
-                        <li class="subcategory">Операционные системы</li>
-                        <li class="subcategory">Офисные приложения</li>
-                        <li class="subcategory">Антивирусы</li>
-                        <li class="subcategory">Графические редакторы</li>
+                        <li class="subcategory" data-category="os">Операционные системы</li>
+                        <li class="subcategory" data-category="office">Офисные приложения</li>
+                        <li class="subcategory" data-category="antivirus">Антивирусы</li>
+                        <li class="subcategory" data-category="graphics">Графические редакторы</li>
                     </ul>
                 </div>
             </div>
         </div>
-    </main>
-    <footer class="site-footer">
+    </div>
+    
+    <!-- Модальное окно для отображения товаров категории -->
+    <div id="category-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2 id="modal-title"></h2>
+            <div id="category-products" class="products-grid"></div>
+        </div>
+    </div>
+    
+    <footer class="site-footer" id="footer">
         <div class="footer-container">
             <div class="footer-section">
                 <h3>Контактная информация</h3>
                 <ul class="contact-info">
                     <li><i class="fas fa-map-marker-alt"></i> г. Калининграда, ул. Миклухо-Маклая, д. 13-11</li>
                     <li><i class="fas fa-phone"></i> +7 (123) 456-78-90</li>
-                    <li><i class="fas fa-envelope"></i> info@example.com</li>
+                    <li><i class="fas fa-envelope"></i> info@amazingpc.ru</li>
                 </ul>
             </div>
             
@@ -190,9 +137,10 @@
         </div>
         
         <div class="footer-bottom">
-            <p>&copy; 2025 Компьютерная тема. Все права защищены.</p>
+            <p>&copy; 2023 Amazing PC. Все права защищены.</p>
         </div>
     </footer>
+    
     <script src="script.js"></script>
 </body>
 </html>

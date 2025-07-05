@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Информация о товаре</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Orbitron:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/product-page.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="icon" href="images/logo.png" type="image/png">
+</head>
+<body>
+    <nav>
+        <div id="header">
+            <div id="logo-name">
+                <img id="logo" src="images/logo.png" alt="Логотип">
+                <h1>Amazing PC</h1>
+            </div>
+            
+            <div id="navbar">
+                <div class="nav-links">
+                    <a href="index.html" class="nav-link">Главная</a>
+                    <a href="index.html" class="nav-link">Каталог</a>
+                    <a href="index.html" class="nav-link">Акции</a>
+                    <a href="#" class="nav-link">О нас</a>
+                </div>
+                <div class="nav-buttons">
+                    <a class="shopping-cart">
+                        <img src="images/shopping-cart.png" alt="Корзина">
+                        <span class="cart-counter">0</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="product-container">
+        <div id="product-info"></div>
+    </div>
+
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Контактная информация</h3>
+                <ul class="contact-info">
+                    <li><i class="fas fa-map-marker-alt"></i> г. Калининграда, ул. Миклухо-Маклая, д. 13-11</li>
+                    <li><i class="fas fa-phone"></i> +7 (123) 456-78-90</li>
+                    <li><i class="fas fa-envelope"></i> info@example.com</li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Мы в соцсетях</h3>
+                <div class="social-links">
+                    <a href="https://vk.com" target="_blank" class="social-link vk">
+                        <i class="fab fa-vk"></i> ВКонтакте
+                    </a>
+                    <a href="https://youtube.com" target="_blank" class="social-link youtube">
+                        <i class="fab fa-youtube"></i> YouTube
+                    </a>
+                </div>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Часы работы</h3>
+                <p>Пн-Пт: 9:00 - 18:00</p>
+                <p>Сб-Вс: 10:00 - 15:00</p>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2025 Компьютерная тема. Все права защищены.</p>
+        </div>
+    </footer>
+
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const productId = urlParams.get('id');
+            
+            fetch('products.json')
+                .then(response => response.json())
+                .then(data => {
+                    const product = data.products.find(p => p.id === productId);
+                    const productInfo = document.getElementById('product-info');
+                    
+                    if (product) {
+                        let specsHtml = '';
+                        if (product.specs) {
+                            specsHtml = '<h3>Характеристики:</h3><ul>';
+                            for (const [key, value] of Object.entries(product.specs)) {
+                                specsHtml += `<li><strong>${key}:</strong> ${value}</li>`;
+                            }
+                            specsHtml += '</ul>';
+                        }
+                        
+                        productInfo.innerHTML = `
+                            <div class="product-detail">
+                                <div class="product-image">
+                                    <img src="images/${product.image || 'default.jpg'}" alt="${product.name}">
+                                </div>
+                                <div class="product-content">
+                                    <h2>${product.name}</h2>
+                                    <div class="product-price">
+                                        <span class="current-price">${product.price} ₽</span>
+                                        ${product.oldPrice ? `<span class="old-price"><s>${product.oldPrice} ₽</s></span>` : ''}
+                                    </div>
+                                    <div class="product-rating">
+                                        <span class="stars">${'★'.repeat(Math.round(product.rating))}${'☆'.repeat(5 - Math.round(product.rating))}</span>
+                                        <span class="reviews">(${product.reviews} отзывов)</span>
+                                    </div>
+                                    <p class="product-description">${product.description}</p>
+                                    ${specsHtml}
+                                    <button class="add-to-cart-btn">Добавить в корзину</button>
+                                    <a href="index.html" class="back-link">← Вернуться в каталог</a>
+                                </div>
+                            </div>
+                        `;
+                    } else {
+                        productInfo.innerHTML = `
+                            <div class="product-not-found">
+                                <h2>Товар не найден</h2>
+                                <p>К сожалению, запрашиваемый товар не существует или был удален.</p>
+                                <a href="index.html" class="back-link">← Вернуться в каталог</a>
+                            </div>
+                        `;
+                    }
+                })
+                .catch(error => {
+                    console.error('Ошибка загрузки данных:', error);
+                    document.getElementById('product-info').innerHTML = `
+                        <div class="error-message">
+                            <h2>Ошибка загрузки данных</h2>
+                            <p>Произошла ошибка при загрузке информации о товаре. Пожалуйста, попробуйте позже.</p>
+                            <a href="index.html" class="back-link">← Вернуться в каталог</a>
+                        </div>
+                    `;
+                });
+        });
+    </script>
+</body>
+</html>

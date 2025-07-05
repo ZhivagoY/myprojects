@@ -1,0 +1,395 @@
+{
+    "products": [
+        {
+            "id": "CPU001",
+            "name": "Процессор AMD Ryzen 5 7500f OEM",
+            "category": "processors",
+            "price": "13 000",
+            "oldPrice": "14 300",
+            "description": "6-ядерный процессор с тактовой частотой до 4.4 ГГц",
+            "image": "amd1.jpg",
+            "rating": 4.8,
+            "reviews": 125,
+            "specs": {
+                "Ядра": 6,
+                "Потоки": 12,
+                "Частота": "3.8 GHz",
+                "Максимальная частота": "4.4 GHz"
+            }
+        },
+        {
+            "id": "CPU002",
+            "name": "Процессор AMD Ryzen 7 5800X",
+            "category": "processors",
+            "price": "21 499",
+            "oldPrice": "23 999",
+            "description": "8-ядерный процессор с тактовой частотой до 4.7 ГГц",
+            "image": "ryzen7.jpg",
+            "rating": 4.7,
+            "reviews": 203,
+            "specs": {
+                "Ядра": 8,
+                "Потоки": 16,
+                "Частота": "3.8 GHz",
+                "Максимальная частота": "4.7 GHz"
+            }
+        },
+        {
+            "id": "CPU003",
+            "name": "Процессор Intel Pentium 4 Prescott",
+            "category": "processors",
+            "price": "1 500",
+            "oldPrice": "3 200",
+            "description": "Одноядерный процессор с гиперпоточностью, тактовая частота до 3.8 ГГц",
+            "image": "pentium4.jpg",
+            "rating": 3.5,
+            "reviews": 68,
+            "specs": {
+              "Ядра": 1,
+              "Потоки": 2,
+              "Частота": "3.2 GHz",
+              "Максимальная частота": "3.8 GHz",
+              "Техпроцесс": "90 нм",
+              "Кэш L2": "1 MB",
+              "TDP": "115 Вт",
+              "Сокет": "LGA 775"
+            }
+        },
+        {
+            "id": "GPU001",
+            "name": "Видеокарта Palit GeForce RTX 4060 Dual",
+            "category": "videocards",
+            "price": "28 999",
+            "oldPrice": "32 999",
+            "description": "8 ГБ GDDR6, 3072 ядер CUDA",
+            "image": "gpu_rtx4060.jpg",
+            "rating": 4.7,
+            "reviews": 89,
+            "specs": {
+                "Видеопамять": "8 GB GDDR6",
+                "Ширина шины": "128-bit",
+                "Тактовая частота": "1830 MHz"
+            }
+        },
+        {
+            "id": "GPU002",
+            "name": "Видеокарта ASUS ROG Strix GeForce RTX 3060",
+            "category": "videocards",
+            "price": "34 999",
+            "oldPrice": "37 499",
+            "description": "12 ГБ GDDR6, 3584 ядра CUDA, охлаждение с тремя вентиляторами Axial-tech",
+            "image": "gpu_rtx3060rog.jpg",
+            "rating": 4.8,
+            "reviews": 156,
+            "specs": {
+                "Видеопамять": "12 GB GDDR6",
+                "Ширина шины": "192-bit",
+                "Тактовая частота": "1320 MHz",
+                "Выходы": "2x HDMI 2.1, 3x DisplayPort 1.4a"
+            }
+        },
+        {
+            "id": "GPU004",
+            "name": "Видеокарта MSI GeForce RTX 4080 Super",
+            "category": "videocards",
+            "price": "99 990",
+            "oldPrice": "109 990",
+            "description": "Игровая видеокарта с архитектурой Ada Lovelace, DLSS 3 и 16 ГБ GDDR6X",
+            "image": "gpu_rtx4080_super.jpg",
+            "rating": 4.9,
+            "reviews": 1488,
+            "specs": {
+              "Графический процессор": "AD103-400",
+              "Архитектура": "Ada Lovelace",
+              "Видеопамять": "16 ГБ GDDR6X",
+              "Шина памяти": "256 бит",
+              "Базовая частота": "2295 МГц",
+              "Boost-частота": "2550 МГц",
+              "RT-ядер": "80",
+              "Tensor-ядер": "320",
+              "CUDA-ядер": "10240",
+              "TDP": "320 Вт",
+              "Рекомендуемый БП": "750 Вт",
+              "Разъемы": "3 x DisplayPort 1.4a, 1 x HDMI 2.1",
+              "Габариты": "304 x 137 x 61 мм"
+            } 
+        },
+        {
+            "id": "RAM001",
+            "name": "Оперативная память ADATA XPG Lancer Blade",
+            "category": "ram",
+            "price": "8 999",
+            "oldPrice": "9 999",
+            "description": "32 ГБ (2x16 ГБ) DDR5 6000 МГц",
+            "image": "ram_adata32.jpg",
+            "rating": 4.9,
+            "reviews": 64,
+            "specs": {
+                "Объем памяти": "32 GB",
+                "Тип памяти": "DDR5",
+                "Скорость": "6000 MHz"
+            }
+        },
+        {
+            "id": "MOBO001",
+            "name": "Материнская плата MSI B650 GAMING PLUS WIFI",
+            "category": "motherboards",
+            "price": "15 299",
+            "oldPrice": "16 999",
+            "description": "Socket AM5, AMD B650, DDR5",
+            "image": "msib650.jpg",
+            "rating": 4.6,
+            "reviews": 42,
+            "specs": {
+                "Сокет": "AM5",
+                "Чипсет": "AMD B650",
+                "Слоты RAM": 4
+            }
+        },
+        {
+            "id": "MOUSE001",
+            "name": "Игровая мышь Logitech G502 HERO",
+            "category": "mice",
+            "price": "5 499",
+            "oldPrice": "6 199",
+            "description": "Игровая мышь с сенсором HERO 25K, 11 программируемыми кнопками, регулируемым весом",
+            "image": "mouse_logitech_g502.jpg",
+            "rating": 4.9,
+            "reviews": 342,
+            "specs": {
+                "Сенсор": "HERO 25K",
+                "dpi": "100-25600",
+                "Кнопки": "11 программируемых",
+                "Вес": "121g (с регулируемым весом)",
+                "Подключение": "Проводная (USB)",
+                "rgb": "Да (16.8 млн цветов)"
+            }
+        },
+        {
+            "id": "MOUSE002",
+            "name": "Мышь Razer DeathAdder V2",
+            "category": "mice",
+            "price": "6 799",
+            "oldPrice": "7 499",
+            "description": "Эргономичная игровая мышь с сенсором Focus+ 20K DPI и 8 программируемыми кнопками",
+            "image": "razer_deathadder.jpg",
+            "rating": 4.8,
+            "reviews": 215,
+            "specs": {
+                "sensor": "Focus+ Optical (20K DPI)",
+                "buttons": "8 программируемых",
+                "connection": "Проводная (USB)",
+                "weight": "82g",
+                "rgb": "Chroma RGB (16.8 млн цветов)",
+                "speed": "650 IPS",
+                "acceleration": "50G"
+            }
+        },
+        {
+            "id": "MOUSE003",
+            "name": "Мышь SteelSeries Aerox 3 Wireless",
+            "category": "mice",
+            "price": "8 999",
+            "oldPrice": "9 999",
+            "description": "Беспроводная игровая мышь с ультралегким корпусом и технологией Quantum 2.0 Wireless",
+            "image": "steelseries_aerox3.jpg",
+            "rating": 4.7,
+            "reviews": 178,
+            "specs": {
+                "sensor": "TrueMove Air (18K DPI)",
+                "buttons": "6 программируемых",
+                "connection": "Беспроводная (2.4GHz + Bluetooth)",
+                "weight": "66g",
+                "rgb": "PrismSync RGB",
+                "battery": "200 часов (без подсветки)",
+                "waterResistance": "IP54"
+            }
+        },
+        {
+            "id": "MOUSE004",
+            "name": "Мышь Logitech G Pro X Superlight",
+            "category": "mice",
+            "price": "12 499",
+            "oldPrice": "13 999",
+            "description": "Профессиональная беспроводная мышь для киберспорта с весом менее 63 грамм",
+            "image": "logitech_gpro.jpg",
+            "rating": 4.9,
+            "reviews": 342,
+            "specs": {
+                "sensor": "HERO 25K (25K DPI)",
+                "buttons": "5 программируемых",
+                "connection": "Беспроводная (Lightspeed)",
+                "weight": "63g",
+                "rgb": "Нет",
+                "battery": "70 часов",
+                "microswitches": "Сменные Omron"
+            }
+        },
+        {
+            "id": "PSU001",
+            "name": "Блок питания GECID Power Pro 750W",
+            "category": "power",
+            "price": "6 299",
+            "oldPrice": "7 199",
+            "description": "Блок питания 750W, 80+ Bronze, активный PFC, защита от перегрузки",
+            "image": "gec_750.jpg",
+            "rating": 4.5,
+            "reviews": 87,
+            "specs": {
+                "Мощность": "750W",
+                "Сертификат": "80+ Bronze",
+                "Разъемы": "1x 24-pin, 1x 8-pin CPU, 2x PCI-E 6+2, 4x SATA, 3x Molex",
+                "Охлаждение": "120mm гидродинамический",
+                "Защита": "OVP, UVP, OPP, SCP, OTP"
+            }
+        },
+        {
+            "id": "PSU002",
+            "name": "Блок питания Aerocool KCAS-1000M 1000W",
+            "category": "power",
+            "price": "4 999",
+            "oldPrice": "5 799",
+            "description": "Блок питания 1000W, 80+ Bronze, встроенный APFC, мощная шина питания +12 В",
+            "image": "kcas_1000.jpg",
+            "rating": 2.0,
+            "reviews": 69,
+            "specs": {
+                "Мощность": "1000W",
+                "Сертификат": "80+ Bronze",
+                "Разъемы": "1x 20+4-pin, 1x 4+4-pin CPU, 6x PCI-E 6+2, 10x SATA, 6x Molex",
+                "Охлаждение": "140mm гидродинамический",
+                "Защита": "OVP, UVP, OPP, SCP, OTP"
+            }
+        },
+        {
+            "id": "CASE001",
+            "name": "Корпус NZXT H510 Elite Black",
+            "category": "cases",
+            "price": "9 999",
+            "oldPrice": "11 499",
+            "description": "Среднебашенный корпус с закаленным стеклом панелями, RGB подсветкой и встроенным контроллером",
+            "image": "nzxt_h510_elite.jpg",
+            "rating": 4.7,
+            "reviews": 89,
+            "specs": {
+                "тип": "Mid-Tower",
+                "Материсная плата": "ATX, Micro-ATX, Mini-ITX",
+                "Материал": "Сталь, закаленное стекло",
+                "Цвет": "Черный",
+                "Охлаждение": "2x 140mm Aer RGB 2 (предустановлены)",
+                "Слоты": "7",
+                "Максимальная длина GPU": "381mm",
+                "Максимальная высота системы охлаждения": "165mm"
+            }
+        },
+        {
+            "id": "CASE002",
+            "name": "Корпус Deepcool MATREXX 55 MESH",
+            "category": "cases",
+            "price": "5 299",
+            "oldPrice": "6 299",
+            "description": "Корпус с mesh-фасадом для оптимального воздушного потока и поддержкой СЖО",
+            "image": "deepcool_matrexx55.jpg",
+            "rating": 4.5,
+            "reviews": 64,
+            "specs": {
+                "тип": "Mid-Tower",
+                "Материсная плата": "ATX, Micro-ATX, Mini-ITX",
+                "Материал": "Сталь, пластик, закаленное стекло",
+                "Цвет": "Черный",
+                "Охлаждение": "3x 120mm (опционально)",
+                "Слоты": "7",
+                "Максимальная длина GPU": "370mm",
+                "Максимальная высота системы охлаждения": "160mm"
+            }
+        },
+        {
+            "id": "CASE003",
+            "name": "Корпус Lian Li PC-O11 Dynamic White",
+            "category": "cases",
+            "price": "14 799",
+            "oldPrice": "16 499",
+            "description": "Премиальный корпус с панорамным стеклом и поддержкой двойной камеры",
+            "image": "lianli_o11d.jpg",
+            "rating": 4.9,
+            "reviews": 112,
+            "specs": {
+                "тип": "Full-Tower",
+                "Материсная плата": "ATX, Micro-ATX, E-ATX",
+                "Материал": "Алюминий, закаленное стекло",
+                "Цвет": "Белый",
+                "Охлаждение": "Нет (опционально до 9x 120mm)",
+                "Слоты": "8",
+                "Максимальная длина GPU": "420mm",
+                "Максимальная высота системы охлаждения": "155mm",
+                "Водяное охлаждение": "Поддержка 360mm радиаторов"
+            }
+        },
+        {
+            "id": "KEYBOARD001",
+            "name": "Клавиатура Aula F75",
+            "category": "keyboards",
+            "price": "3 499",
+            "oldPrice": "6 999",
+            "description": "AULA F75 - механическая клавиатура с тремя вариантами подключения: проводное, радиоканал и Bluetooth, RGB подсветкой и роллером для управления эффектами и мультимедийными функциями",
+            "image": "aula_f75_blue_green1.jpg",
+            "rating": 4.77,
+            "reviews": 149,
+            "specs": {
+                "Тип": "Механическая",
+                "Основной цвет": "Белый",
+                "Дополнительные цвета": "Голубой, зеленый",
+                "Язык раскладки": "Английский",
+                "Подсветка клавиш": "Есть",
+                "Цвет подсветки клавиш": "RGB",
+                "Материал кейкапов": "PBT",
+                "Тип подключения": "проводная + беспроводная",
+                "Интерфейс подключения": "Bluetooth, USB Type-A, радиоканал",
+                "Ширина": "322.7 мм",
+                "Глубина": "143.2 мм"
+            }
+        },
+        {
+            "id": "HEAD001",
+            "name": "Наушники Fifine H6",
+            "category": "headphones",
+            "price": "3 999",
+            "oldPrice": "6 999",
+            "description": "Проводная гарнитура Fifine H6 ‒ игровое устройство с несколькими режимами обработки звука",
+            "image": "fifine-h6.jpg",
+            "rating": 4.7,
+            "reviews": 214,
+            "specs": {
+              "Тип": "Полноразмерные",
+              "Подключение": "USB Type-A",
+              "Активное шумоподавление": "Нет",
+              "Диапазон частот": "20 Гц - 20 кГц",
+              "Чувствительность": "105 дБ",
+              "Крепление микрофона": "Подвижное",
+              "Вес": "330 г",
+              "Цвета": ["Чёрный", "Белый", "Розовый"]
+            }
+          },
+          {
+            "id": "MONITOR1",
+            "name": "Монитор MSI g244F",
+            "category": "monitors",
+            "price": "12 699",
+            "oldPrice": "13 999",
+            "description": "Игровой монитор MSI G244F с экраном 23.8",
+            "image": "msi_g244f.jpg",
+            "rating": 4.89,
+            "reviews": 501,
+            "specs": {
+                "Тип подсветки матрицы": "LED",
+                "Диагональ экрана (дюйм)": "23.8",
+                "Максимальное разрешение": "1920x1080",
+                "Технология изготовления матрицы": "IPS",
+                "Покрытие экрана": "Матовое",
+                "Соотношение сторон": "16:9",
+                "Видеоразъемы": "DisplayPort, HDMI",
+                "Вес монитора с подставкой": "4.2 кг"
+            }
+        }
+    ]
+}
