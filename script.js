@@ -1,5 +1,4 @@
 document.addEventListener('DOMContentLoaded', function() {
-    // Загрузка категорий
     const categories = document.querySelectorAll('.category-header');
     categories.forEach(category => {
         category.addEventListener('click', function() {
@@ -16,7 +15,6 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
     
-    // Загрузка товаров
     async function loadProducts() {
         try {
             const response = await fetch('products.json');
@@ -28,7 +26,6 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
     
-    // Отображение товаров
     function displayProducts(products, containerId) {
         const container = document.getElementById(containerId);
         container.innerHTML = '';
@@ -54,19 +51,15 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
     
-    // Фильтрация товаров по категории
     function filterProductsByCategory(products, category) {
         return products.filter(product => product.category === category);
     }
     
-    // Инициализация приложения
     async function init() {
         const products = await loadProducts();
         
-        // Показываем все товары на главной странице
         displayProducts(products, 'items');
         
-        // Обработчики кликов по подкатегориям
         const subcategories = document.querySelectorAll('.subcategory');
         const modal = document.getElementById('category-modal');
         const modalTitle = document.getElementById('modal-title');
@@ -82,16 +75,14 @@ document.addEventListener('DOMContentLoaded', function() {
                 modalTitle.textContent = categoryName;
                 displayProducts(filteredProducts, 'category-products');
                 
-                // Добавляем класс active для показа модального окна
                 modal.classList.add('active');
-                document.body.style.overflow = 'hidden'; // Блокируем прокрутку страницы
+                document.body.style.overflow = 'hidden';
             });
         });
         
-        // Закрытие модального окна
         function closeModal() {
             modal.classList.remove('active');
-            document.body.style.overflow = ''; // Возвращаем прокрутку
+            document.body.style.overflow = '';
         }
         
         closeBtn.addEventListener('click', closeModal);
@@ -102,7 +93,6 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
         
-        // Закрытие по ESC
         document.addEventListener('keydown', (e) => {
             if (e.key === 'Escape' && modal.classList.contains('active')) {
                 closeModal();
@@ -110,6 +100,5 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
     
-    // Запускаем приложение
     init();
 });

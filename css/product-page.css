@@ -1,4 +1,3 @@
-/* Страница товара */
 .product-container {
     max-width: 1200px;
     margin: 40px auto;
@@ -178,7 +177,6 @@
     text-decoration: underline;
 }
 
-/* Адаптивность страницы товара */
 @media (max-width: 900px) {
     .product-detail {
         flex-direction: column;
